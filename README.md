@@ -16,3 +16,4 @@ This repo was created as follows (check git history for details):
 7. `cd async-css-angular-example`
 8. `npm start`
 9. Start your browser and navigate to <http://localhost:4200/> to ensure everything works as expected.
+10. In *angular.json*, add `"extractCss": true`, so that styles are loaded from css files rather than embedded.
