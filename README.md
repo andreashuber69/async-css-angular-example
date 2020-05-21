@@ -37,3 +37,17 @@ details.
 
 15. Back in the terminal, execute `npm start`, switch to your browser and reload. Everything should still work as
     before.
+16. In the terminal hit CTRL-C and execute `npm install html-webpack-plugin async-css-plugin --save-dev`.
+17. In the editor, modify *./custom-webpack.config.js* as follows:
+
+    ``` js
+    const HtmlWebpackPlugin = require('html-webpack-plugin')
+    const AsyncCssPlugin = require("async-css-plugin");
+
+    module.exports = {
+      plugins: [
+        new HtmlWebpackPlugin(),
+        new AsyncCssPlugin({ logLevel: "info" })
+      ]
+    };
+    ```
