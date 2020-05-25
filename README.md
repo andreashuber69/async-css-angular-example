@@ -9,6 +9,10 @@ This repo demonstrates from scratch how to
 below, please see the [git history](https://github.com/andreashuber69/async-css-angular-example/commits/master) for
 details.
 
+**CAUTION**: The steps below just reproduce what was reported
+[here](https://github.com/andreashuber69/async-css-plugin/issues/16). It is currently unclear why this happens or how
+to fix this. PRs are very welcome!
+
 1. On github.com, create a new repo named `async-css-angular-example`.
 2. Clone the repo locally.
 3. Add this README.md file plus supporting files.
@@ -51,3 +55,12 @@ details.
       ]
     };
     ```
+
+18. Execute `npm run build`. At first we see promising messages in the console:
+
+    ``` console
+    95% emitting HtmlWebpackPlugin
+    AsyncCssPlugin[info]: index.html: Modified link to styles.css.
+    ```
+
+    ... but then the generated output under *./dist* looks the same as without the plugins.
